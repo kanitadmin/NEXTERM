@@ -1,6 +1,7 @@
-version: 3
 services:
   nexterm:
+    environment:
+      ENCRYPTION_KEY: "aba3aa8e29b9904d5d8d705230b664c053415c54be20ad13be99af0057dfa23a" # openssl rand -hex 32
     ports:
       - "6989:6989"
     restart: always
